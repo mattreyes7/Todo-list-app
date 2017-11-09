@@ -19,4 +19,8 @@ $("input[type='text']").keypress(function(event){
     // create a new li and add to ul
     $("ul").append("<li><span><i class='fa fa-bomb' aria-hidden='true'></i></span> " + todoText + "</li>");
   }
-})
+});
+
+$(".fa-check-circle").click(function(){
+  $("input[type='text']").fadeToggle();
+});
